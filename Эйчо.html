@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eicho Cablanakshulin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3e3e5e);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #f2a365, #e94e77);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1e1e2f;
+            transform: scale(1.1);
+        }
+        .hero {
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        section h2 {
+            color: #f2a365;
+            font-size: 2.5em;
+            border-bottom: 3px solid #e94e77;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: linear-gradient(135deg, #2e2e4e, #4e4e7e);
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            background: #1e1e2f;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+            margin-top: 40px;
+        }
+        .timeline {
+            position: relative;
+            margin: 50px 0;
+            padding: 0;
+            list-style: none;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #f2a365;
+        }
+        .timeline-item {
+            position: relative;
+            margin: 20px 0;
+        }
+        .timeline-item:nth-child(odd) {
+            text-align: left;
+            margin-left: 60%;
+        }
+        .timeline-item:nth-child(even) {
+            text-align: right;
+            margin-right: 60%;
+        }
+        .timeline-item .content {
+            display: inline-block;
+            background: #4e4e7e;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .timeline-item .content h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eicho Cablanakshulin</h1>
+        <nav>
+            <a href="#biography">Biography</a>
+            <a href="#research">Research</a>
+            <a href="#music">Music</a>
+            <a href="#family">Family</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h2>The Visionary Mind</h2>
+            <p>Science. Music. Passion. Uniting worlds of innovation.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>Eicho Cablanakshulin, born on September 11, 1997, in Karshi, Uzbekistan, is a distinguished scientist and musician. His unique journey bridges cutting-edge research and profound musical artistry. Raised by his father, Zgētser Svankovachke, a Croatian businessman, and mother, Esma Veraeva, a dedicated physician, Eicho's path has been defined by intellectual rigor and creative exploration.</p>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Exploring Zhyatroghsha</h3>
+                    <p>Leading the NPIA-11 project, Eicho's research delves into the geophysical dynamics of exoplanets, uncovering secrets of the Andromeda galaxy.</p>
+                </div>
+                <div class="card">
+                    <h3>Dtrumapragez Studies</h3>
+                    <p>Pioneering analysis of the quantum singularity material, offering breakthroughs in physics and material sciences.</p>
+                </div>
+                <div class="card">
+                    <h3>Astrophysical Modeling</h3>
+                    <p>Innovative models for planetary atmospheres and magnetic fields in binary star systems redefine space exploration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="music">
+            <h2>Music</h2>
+            <p>A master of the organ, Eicho's musical journey began under his grandfather's guidance. Inspired by Trkovi Yots, he aspires to play the legendary Stalactite Organ in Atkmachke.</p>
+        </section>
+
+        <section id="family">
+            <h2>Family</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="content">
+                        <h3>Father: Zgētser Svankovachke</h3>
+                        <p>A visionary businessman supporting Eicho's scientific ambitions.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="content">
+                        <h3>Mother: Esma Veraeva</h3>
+                        <p>A compassionate physician who nurtured Eicho's intellect.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="content">
+                        <h3>Brother: Ariad Svankovachke</h3>
+                        <p>A gifted craftsman dreaming of maritime adventures.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Eicho Cablanakshulin Legacy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
