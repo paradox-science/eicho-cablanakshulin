@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://paradox-science.github.io/eicho-cablanakshulin/sitemap.xml
