@@ -1,3 +1,7 @@
-User-agent: *
+User-agent: Googlebot
 Allow: /
+
+User-agent: Yandex
+Allow: /
+
 Sitemap: https://paradox-science.github.io/eicho-cablanakshulin/sitemap.xml
